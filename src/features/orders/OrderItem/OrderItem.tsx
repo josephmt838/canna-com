@@ -10,23 +10,19 @@ interface Product {
 }
 
 interface OrderItemProps {
-    orderId: string;
-    date: string;
-    status: string;
-    products: Product[];
-    subtotal: number;
-    shipping: number;
-    total: number;
+    order: {
+        id: string;
+        date: string;
+        status: string;
+        products: Product[];
+        subtotal: number;
+        shipping: number;
+        total: number;
+    };
 }
 
 const OrderItem: React.FC<OrderItemProps> = ({
-    orderId,
-    date,
-    status,
-    products,
-    subtotal,
-    shipping,
-    total,
+    order: { id: orderId, date, status, products, subtotal, shipping, total },
 }) => {
     return (
         <div className={styles.orderItem}>

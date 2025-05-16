@@ -10,9 +10,21 @@ const OrdersPage: React.FC = () => {
             id: '1',
             date: '2024-03-15',
             status: 'Delivered',
-            items: [
-                { name: 'Product 1', quantity: 2, price: 29.99 },
-                { name: 'Product 2', quantity: 1, price: 39.99 },
+            products: [
+                {
+                    name: 'Product 1',
+                    quantity: 2,
+                    price: 29.99,
+                    id: '1234',
+                    image: 'https://picsum.photos/200',
+                },
+                {
+                    name: 'Product 2',
+                    quantity: 1,
+                    price: 39.99,
+                    id: '2345',
+                    image: 'https://picsum.photos/200',
+                },
             ],
             subtotal: 99.97,
             shipping: 5.99,
@@ -22,7 +34,15 @@ const OrdersPage: React.FC = () => {
             id: '2',
             date: '2024-03-10',
             status: 'Processing',
-            items: [{ name: 'Product 3', quantity: 1, price: 49.99 }],
+            products: [
+                {
+                    name: 'Product 3',
+                    quantity: 1,
+                    price: 49.99,
+                    id: '3456',
+                    image: 'https://picsum.photos/200',
+                },
+            ],
             subtotal: 49.99,
             shipping: 5.99,
             total: 55.98,
