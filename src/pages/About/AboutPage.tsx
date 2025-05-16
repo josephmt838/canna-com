@@ -1,10 +1,12 @@
 import React from 'react';
-import { pageLayout, typography } from '../../styles/shared';
+import { FaGraduationCap, FaLeaf, FaUsers } from 'react-icons/fa';
+import { typography } from '../../styles/shared';
+import styles from './AboutPage.module.css';
 
 const AboutPage: React.FC = () => {
     return (
-        <div className={pageLayout.page}>
-            <section className={pageLayout.hero}>
+        <div>
+            <section className={styles.hero}>
                 <h1 className={typography.heading1}>About Canna-Com</h1>
                 <p className={typography.paragraph}>
                     Your trusted source for premium cannabis products and
@@ -12,10 +14,10 @@ const AboutPage: React.FC = () => {
                 </p>
             </section>
 
-            <div className={pageLayout.content}>
-                <section>
+            <div className={styles.content}>
+                <section className={styles.section}>
                     <h2 className={typography.heading2}>Our Mission</h2>
-                    <div className={pageLayout.card}>
+                    <div className={styles.card}>
                         <p className={typography.paragraph}>
                             At Canna-Com, we're dedicated to providing
                             high-quality cannabis products while promoting
@@ -27,10 +29,11 @@ const AboutPage: React.FC = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className={styles.valuesSection}>
                     <h2 className={typography.heading2}>Our Values</h2>
-                    <div className={pageLayout.grid}>
-                        <div className={pageLayout.card}>
+                    <div className={styles.valuesGrid}>
+                        <div className={styles.valueCard}>
+                            <FaLeaf className={styles.valueIcon} />
                             <h3 className={typography.heading3}>Quality</h3>
                             <p className={typography.paragraph}>
                                 We source only the finest products from trusted
@@ -38,7 +41,8 @@ const AboutPage: React.FC = () => {
                                 standards of quality and safety.
                             </p>
                         </div>
-                        <div className={pageLayout.card}>
+                        <div className={styles.valueCard}>
+                            <FaGraduationCap className={styles.valueIcon} />
                             <h3 className={typography.heading3}>Education</h3>
                             <p className={typography.paragraph}>
                                 We believe in empowering our customers with
@@ -46,7 +50,8 @@ const AboutPage: React.FC = () => {
                                 effects, and responsible consumption.
                             </p>
                         </div>
-                        <div className={pageLayout.card}>
+                        <div className={styles.valueCard}>
+                            <FaUsers className={styles.valueIcon} />
                             <h3 className={typography.heading3}>Community</h3>
                             <p className={typography.paragraph}>
                                 We're committed to building a supportive
@@ -57,9 +62,9 @@ const AboutPage: React.FC = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className={styles.section}>
                     <h2 className={typography.heading2}>Our Team</h2>
-                    <div className={pageLayout.card}>
+                    <div className={styles.card}>
                         <p className={typography.paragraph}>
                             Our team consists of passionate cannabis experts,
                             healthcare professionals, and customer service
@@ -71,9 +76,9 @@ const AboutPage: React.FC = () => {
                     </div>
                 </section>
 
-                <section>
+                <section className={styles.section}>
                     <h2 className={typography.heading2}>Quality Assurance</h2>
-                    <div className={pageLayout.card}>
+                    <div className={styles.card}>
                         <p className={typography.paragraph}>
                             All our products undergo rigorous testing to ensure
                             they meet the highest standards of quality and

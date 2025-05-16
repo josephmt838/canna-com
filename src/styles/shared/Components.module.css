@@ -74,6 +74,15 @@
     font-weight: 500;
 }
 
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon.cart {
+    color: var(--primary);
+}
+
 .price {
     font-size: 1.2rem;
     font-weight: 600;

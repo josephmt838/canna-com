@@ -1,5 +1,11 @@
 import React from 'react';
+import { FaRegHeart, FaShippingFast } from 'react-icons/fa';
+import { TbPlant } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import accessories from '../../assets/images/categories/accessories.jpg';
+import cbdOil from '../../assets/images/categories/cbd-oil.jpg';
+import edibles from '../../assets/images/categories/edibles.jpg';
+import topical from '../../assets/images/categories/topical.jpg';
 import { components, pageLayout, typography } from '../../styles/shared';
 import styles from './LandingPage.module.css';
 
@@ -7,7 +13,7 @@ const LandingPage: React.FC = () => {
     return (
         <div className={pageLayout.page}>
             {/* Hero Section */}
-            <section className={styles.hero}>
+            <section className={`${styles.hero} ${styles.image}`}>
                 <div className={styles.heroContent}>
                     <h1 className={typography.heading1}>
                         Premium CBD Products for a Better Life
@@ -42,7 +48,7 @@ const LandingPage: React.FC = () => {
                         className={styles.categoryCard}
                     >
                         <img
-                            src='/images/categories/oils.jpg'
+                            src={cbdOil}
                             alt='CBD Oils'
                         />
                         <h3 className={typography.heading3}>CBD Oils</h3>
@@ -52,7 +58,7 @@ const LandingPage: React.FC = () => {
                         className={styles.categoryCard}
                     >
                         <img
-                            src='/images/categories/edibles.jpg'
+                            src={edibles}
                             alt='Edibles'
                         />
                         <h3 className={typography.heading3}>Edibles</h3>
@@ -62,7 +68,7 @@ const LandingPage: React.FC = () => {
                         className={styles.categoryCard}
                     >
                         <img
-                            src='/images/categories/topicals.jpg'
+                            src={topical}
                             alt='Topicals'
                         />
                         <h3 className={typography.heading3}>Topicals</h3>
@@ -72,7 +78,7 @@ const LandingPage: React.FC = () => {
                         className={styles.categoryCard}
                     >
                         <img
-                            src='/images/categories/accessories.jpg'
+                            src={accessories}
                             alt='Accessories'
                         />
                         <h3 className={typography.heading3}>Accessories</h3>
@@ -87,7 +93,7 @@ const LandingPage: React.FC = () => {
                 <h2 className={typography.heading2}>Why Choose Us</h2>
                 <div className={styles.benefitsGrid}>
                     <div className={styles.benefitCard}>
-                        <div className={styles.benefitIcon}>🌿</div>
+                        <TbPlant className={styles.benefitIcon} />
                         <h3 className={typography.heading3}>Premium Quality</h3>
                         <p className={typography.paragraph}>
                             All our products are made from organically grown
@@ -95,7 +101,7 @@ const LandingPage: React.FC = () => {
                         </p>
                     </div>
                     <div className={styles.benefitCard}>
-                        <div className={styles.benefitIcon}>🚚</div>
+                        <FaShippingFast className={styles.benefitIcon} />
                         <h3 className={typography.heading3}>Fast Shipping</h3>
                         <p className={typography.paragraph}>
                             Free shipping on orders over $50. Get your products
@@ -103,7 +109,7 @@ const LandingPage: React.FC = () => {
                         </p>
                     </div>
                     <div className={styles.benefitCard}>
-                        <div className={styles.benefitIcon}>💚</div>
+                        <FaRegHeart className={styles.benefitIcon} />
                         <h3 className={typography.heading3}>
                             Customer Support
                         </h3>

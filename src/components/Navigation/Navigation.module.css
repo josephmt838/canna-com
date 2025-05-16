@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .navContainer {
@@ -80,12 +81,14 @@
 .navActions {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .cartLink {
     position: relative;
     text-decoration: none;
+    display: flex;
 }
 
 .cartIcon {
@@ -94,15 +97,13 @@
 
 .cartCount {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -10px;
+    right: -10px;
     background-color: #2ecc71;
     color: white;
     font-size: 0.75rem;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
-    min-width: 1.5rem;
-    text-align: center;
 }
 
 .userMenu {

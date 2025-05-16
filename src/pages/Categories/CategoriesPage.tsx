@@ -2,48 +2,55 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './CategoriesPage.module.css';
 
+import accessories from '../../assets/images/categories/accessories.jpg';
+import cbdOil from '../../assets/images/categories/cbd-oil.jpg';
+import edibles from '../../assets/images/categories/edibles.jpg';
+import flower from '../../assets/images/categories/flower.jpg';
+import preroll from '../../assets/images/categories/preroll.jpg';
+import topical from '../../assets/images/categories/topical.jpg';
+
 // Mock categories data - this would typically come from an API
 const categories = [
     {
         id: 1,
         name: 'Flower',
         description: 'Premium cannabis flower strains',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Flower',
+        image: flower,
         count: 24,
     },
     {
         id: 2,
         name: 'Edibles',
         description: 'Delicious cannabis-infused treats',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Edibles',
+        image: edibles,
         count: 18,
     },
     {
         id: 3,
         name: 'Concentrates',
         description: 'High-potency cannabis extracts',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Concentrates',
+        image: cbdOil,
         count: 15,
     },
     {
         id: 4,
-        name: 'Vapes',
-        description: 'Disposable and refillable vape products',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Vapes',
+        name: 'Topicals',
+        description: 'All your topical solutions in one place',
+        image: topical,
         count: 20,
     },
     {
         id: 5,
         name: 'Pre-rolls',
         description: 'Ready-to-smoke cannabis joints',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Pre-rolls',
+        image: preroll,
         count: 12,
     },
     {
         id: 6,
         name: 'Accessories',
         description: 'Essential cannabis accessories and tools',
-        image: 'https://placehold.co/400x300/2ecc71/white?text=Accessories',
+        image: accessories,
         count: 30,
     },
 ];

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { MdOutlineShoppingCart } from 'react-icons/md';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import { components } from '../../styles/shared';
 import styles from './Navigation.module.css';
 
 const Navigation: React.FC = () => {
@@ -135,7 +137,10 @@ const Navigation: React.FC = () => {
                         className={styles.cartLink}
                         onClick={handleLinkClick}
                     >
-                        <span className={styles.cartIcon}>🛒</span>
+                        <MdOutlineShoppingCart
+                            className={`${components.icon} ${components.cart}`}
+                        />
+
                         <span className={styles.cartCount}>0</span>
                     </Link>
 
