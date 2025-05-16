@@ -8,19 +8,20 @@
     text-align: center;
     margin-bottom: 4rem;
     padding: 4rem 0;
-    background-color: #f8f9fa;
     border-radius: 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url('../../assets/landing-hero.jpg') center/cover no-repeat;
 }
 
 .hero h1 {
     font-size: 3rem;
-    color: #333;
+    color: white;
     margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #666;
+    color: white;
 }
 
 .content {

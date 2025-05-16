@@ -2,6 +2,7 @@
     /* Colors */
     --primary: #2ecc71;
     --primary-dark: #27ae60;
+    --primary-light: #eafbea;
     --secondary: #3498db;
     --secondary-dark: #2980b9;
     --success: #2ecc71;
@@ -64,4 +65,5 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    background-color: var(--primary-light);
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { components, pageLayout, typography } from '../../styles/shared';
 import styles from './ContactPage.module.css';
 
@@ -28,7 +29,7 @@ const ContactPage: React.FC = () => {
 
     return (
         <div className={pageLayout.page}>
-            <section className={pageLayout.hero}>
+            <section className={styles.hero}>
                 <h1 className={typography.heading1}>Contact Us</h1>
                 <p className={typography.paragraph}>
                     Have questions? We're here to help. Reach out to our team
@@ -46,13 +47,17 @@ const ContactPage: React.FC = () => {
                             <div className={styles.infoCard}>
                                 <h3 className={typography.heading3}>Email</h3>
                                 <p className={typography.paragraph}>
-                                    support@canna-com.com
+                                    <Link to='mailto:support@canna-com.com'>
+                                        support@canna-com.com
+                                    </Link>
                                 </p>
                             </div>
                             <div className={styles.infoCard}>
                                 <h3 className={typography.heading3}>Phone</h3>
                                 <p className={typography.paragraph}>
-                                    (555) 123-4567
+                                    <Link to='tel:5551234567'>
+                                        (555) 123-4567
+                                    </Link>
                                 </p>
                             </div>
                             <div className={styles.infoCard}>
@@ -159,7 +164,7 @@ const ContactPage: React.FC = () => {
                             </div>
                             <button
                                 type='submit'
-                                className={`${components.button} ${components.button.primary}`}
+                                className={`${components.button} ${components.primary}`}
                             >
                                 Send Message
                             </button>

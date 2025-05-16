@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
+    const handleLinkClick = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
     return (
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
@@ -19,16 +24,36 @@ const Footer: React.FC = () => {
                     <h3>Quick Links</h3>
                     <ul>
                         <li>
-                            <Link to='/products'>Products</Link>
+                            <Link
+                                to='/products'
+                                onClick={handleLinkClick}
+                            >
+                                Products
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/categories'>Categories</Link>
+                            <Link
+                                to='/categories'
+                                onClick={handleLinkClick}
+                            >
+                                Categories
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/about'>About Us</Link>
+                            <Link
+                                to='/about'
+                                onClick={handleLinkClick}
+                            >
+                                About Us
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/contact'>Contact</Link>
+                            <Link
+                                to='/contact'
+                                onClick={handleLinkClick}
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -37,16 +62,36 @@ const Footer: React.FC = () => {
                     <h3>Customer Service</h3>
                     <ul>
                         <li>
-                            <Link to='/shipping'>Shipping Information</Link>
+                            <Link
+                                to='/shipping'
+                                onClick={handleLinkClick}
+                            >
+                                Shipping Information
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/returns'>Returns & Refunds</Link>
+                            <Link
+                                to='/returns'
+                                onClick={handleLinkClick}
+                            >
+                                Returns & Refunds
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/faq'>FAQ</Link>
+                            <Link
+                                to='/faq'
+                                onClick={handleLinkClick}
+                            >
+                                FAQ
+                            </Link>
                         </li>
                         <li>
-                            <Link to='/privacy'>Privacy Policy</Link>
+                            <Link
+                                to='/privacy'
+                                onClick={handleLinkClick}
+                            >
+                                Privacy Policy
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -54,8 +99,16 @@ const Footer: React.FC = () => {
                 <div className={styles.footerSection}>
                     <h3>Contact Us</h3>
                     <ul className={styles.contactInfo}>
-                        <li>Email: support@canna-com.com</li>
-                        <li>Phone: (555) 123-4567</li>
+                        <li>
+                            Email:{' '}
+                            <Link to='mailto:support@canna-com.com'>
+                                support@canna-com.com
+                            </Link>
+                        </li>
+                        <li>
+                            Phone:{' '}
+                            <Link to='tel:5551234567'>(555) 123-4567</Link>
+                        </li>
                         <li>Hours: Mon-Fri 9am-6pm</li>
                     </ul>
                 </div>
@@ -65,6 +118,10 @@ const Footer: React.FC = () => {
                 <p>
                     &copy; {new Date().getFullYear()} Canna-Com. All rights
                     reserved.
+                </p>
+                <p>
+                    Powered by{' '}
+                    <Link to='https://www.josephmt.com'>JosephMT.com</Link>
                 </p>
             </div>
         </footer>

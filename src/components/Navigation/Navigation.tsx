@@ -72,6 +72,15 @@ const Navigation: React.FC = () => {
                     }`}
                 >
                     <Link
+                        to='/'
+                        className={`${styles.navLink} ${
+                            isActive('/') ? styles.active : ''
+                        }`}
+                        onClick={handleLinkClick}
+                    >
+                        Home
+                    </Link>
+                    <Link
                         to='/products'
                         className={`${styles.navLink} ${
                             isActive('/products') ? styles.active : ''
