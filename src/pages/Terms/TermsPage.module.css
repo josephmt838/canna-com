@@ -1,0 +1,138 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('/src/assets/landing-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+    color: white;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section h2 {
+    text-align: left;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray-700);
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+.list li::before {
+    content: '•';
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .content {
+        padding: 0 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+}

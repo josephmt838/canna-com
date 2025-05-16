@@ -20,6 +20,7 @@ import RegisterPage from './pages/Register/RegisterPage';
 import ReturnsPage from './pages/Returns/ReturnsPage';
 import SearchResultsPage from './pages/Search/SearchResultsPage';
 import ShippingPage from './pages/Shipping/ShippingPage';
+import TermsPage from './pages/Terms/TermsPage';
 
 // Protected Pages
 import CartPage from './pages/Cart/CartPage';
@@ -92,6 +93,10 @@ const App: React.FC = () => {
                     <Route
                         path='/faq'
                         element={<FAQPage />}
+                    />
+                    <Route
+                        path='/terms'
+                        element={<TermsPage />}
                     />
                 </Route>
 
