@@ -1,0 +1,41 @@
+.notFoundPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.notFoundPage h1 {
+    font-size: 6rem;
+    color: #e74c3c;
+    margin: 0;
+    line-height: 1;
+}
+
+.notFoundPage h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.notFoundPage p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.homeLink {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.homeLink:hover {
+    background-color: #27ae60;
+}

@@ -1,0 +1,67 @@
+.registerPage {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.registerPage h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 1rem;
+}
+
+.submitButton:hover {
+    background-color: #27ae60;
+}
+
+.loginLink {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.loginLink a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+.loginLink a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}

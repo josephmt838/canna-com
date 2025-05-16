@@ -1,0 +1,52 @@
+.loginPage {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.loginPage h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.error {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.formFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.registerLink {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.registerLink a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+.registerLink a:hover {
+    text-decoration: underline;
+}

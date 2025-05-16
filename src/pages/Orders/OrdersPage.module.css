@@ -1,0 +1,42 @@
+.ordersPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.ordersPage h1 {
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.emptyState p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.shopNowButton {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.shopNowButton:hover {
+    background-color: #27ae60;
+}
+
+.ordersList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

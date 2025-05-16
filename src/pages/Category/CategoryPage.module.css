@@ -1,0 +1,23 @@
+.categoryPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.categoryPage h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.categoryDescription {
+    margin-bottom: 2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}

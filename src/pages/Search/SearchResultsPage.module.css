@@ -1,0 +1,23 @@
+.searchResultsPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.searchResultsPage h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.searchFilters {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.resultsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}

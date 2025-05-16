@@ -1,0 +1,93 @@
+.orderItem {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.orderHeader {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderInfo h3 {
+    margin: 0;
+    color: #333;
+}
+
+.orderDate {
+    margin: 0.5rem 0 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.statusBadge {
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.orderDetails {
+    padding: 1.5rem;
+}
+
+.orderProducts {
+    margin-bottom: 1.5rem;
+}
+
+.productItem {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.productItem:last-child {
+    border-bottom: none;
+}
+
+.productItem img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.productInfo h4 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.productInfo p {
+    margin: 0.25rem 0;
+    color: #666;
+}
+
+.orderSummary {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.total {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #dee2e6;
+    font-weight: 600;
+    color: #333;
+}

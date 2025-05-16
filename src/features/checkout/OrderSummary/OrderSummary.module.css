@@ -1,0 +1,76 @@
+.orderSummary {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.orderSummary h2 {
+    margin: 0 0 1.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.itemsList {
+    margin-bottom: 1.5rem;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.orderItem:last-child {
+    border-bottom: none;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.itemName {
+    color: #333;
+    font-weight: 500;
+}
+
+.itemQuantity {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.itemPrice {
+    color: #333;
+    font-weight: 500;
+}
+
+.summaryDetails {
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.summaryRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    color: #666;
+}
+
+.summaryRow:last-child {
+    margin-bottom: 0;
+}
+
+.totalLabel {
+    color: #333;
+    font-weight: 600;
+}
+
+.totalAmount {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
