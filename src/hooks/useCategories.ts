@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
+import { api } from '../lib/api';
 
 interface Category {
     id: string;
@@ -13,9 +13,7 @@ interface Category {
 }
 
 const fetchCategories = async (): Promise<Category[]> => {
-    const { data } = await axios.get(
-        `${import.meta.env.VITE_SERVER_URL}/api/categories`,
-    );
+    const { data } = await api.get('/categories/');
     return data;
 };
 
